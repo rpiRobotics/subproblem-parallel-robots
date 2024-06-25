@@ -1,4 +1,4 @@
-function [R_0T_vec, p_0T_vec, q_A_vec, q_B_vec, q_C_vec, slopes] = FK(obj, qA_active, qB_active, qC_active)
+function [R_0T_vec, p_0T_vec, q_A_vec, q_B_vec, q_C_vec, slopes] = eclipse_FK(obj, qA_active, qB_active, qC_active)
 R_0T_vec = NaN(3,3,16);
 p_0T_vec = NaN(3,1,16);
 q_A_vec = NaN(6,2,16);
