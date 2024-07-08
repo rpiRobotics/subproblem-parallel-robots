@@ -20,3 +20,7 @@ diagrams.setup; hold on;
 rob.plot(Q_A(:,i), Q_B(:,i));
 diagrams.arrow([0;0;0], p_0T);
 diagrams.redraw; hold off;
+
+%% Test FK
+
+[R_0T_vec, p_0T_vec] = rob.FK(Q_A(1:3,1), Q_B(1:3,1), true)
