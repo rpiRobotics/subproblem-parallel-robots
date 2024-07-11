@@ -8,3 +8,4 @@
 * Eclipse
 * Five Bar Linkage (Planar)
 * Spatial Five Bar Linkage
+* Hexapod (Stewart Platform)
