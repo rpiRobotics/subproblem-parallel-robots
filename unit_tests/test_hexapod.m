@@ -18,8 +18,12 @@ p_0T = [0;0;2];
 i = 1;
 diagrams.setup; hold on;
 rob.plot(Q_A(:,i), Q_B(:,i), Q_C(:,i), Q_D(:,i), Q_E(:,i), Q_F(:,i));
-diagrams.arrow([0;0;0], [0;0;2]);
+% diagrams.arrow([0;0;0], [0;0;2]);
+diagrams.text([0;0;2], "$\mathcal O_T$", align="v", margin=10);
+view(-10,40)
 diagrams.redraw; hold off;
+%%
+diagrams.save()
 
 %% Single arm FK
 [R_t, T_t] = fwdkin(rob.kinC, Q_C(:,i))

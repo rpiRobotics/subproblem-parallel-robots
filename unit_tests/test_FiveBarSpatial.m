@@ -18,9 +18,13 @@ p_0T = 0.3*[1;1;1];
 i = 5;
 diagrams.setup; hold on;
 rob.plot(Q_A(:,i), Q_B(:,i));
-diagrams.arrow([0;0;0], p_0T);
+% diagrams.arrow([0;0;0], p_0T);
+diagrams.text(p_0T, "$\mathcal O_T$", margin=20)
 diagrams.redraw; hold off;
 
 %% Test FK
 
 [R_0T_vec, p_0T_vec] = rob.FK(Q_A(1:3,1), Q_B(1:3,1), true)
+
+%%
+diagrams.save()

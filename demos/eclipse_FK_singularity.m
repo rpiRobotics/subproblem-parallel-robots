@@ -12,14 +12,14 @@ rob = Eclipse;
 % q_B = [deg2rad(120); 0.2];
 % q_C = [deg2rad(240); 0.31];
 
-% q_A = [0; 0];
-% q_B = [deg2rad(30); 0.2635];
-% q_C = [deg2rad(60); 0.2];
-
 q_A = [0; 0];
-q_B = [deg2rad(120); 0.5];
-q_C = [deg2rad(240); 3.21];
-[R_0T_vec, p_0T_vec, q_A_vec, q_B_vec, q_C_vec, slopes] = rob.FK(q_A(1:2), q_B(1:2), q_C(1:2))
+q_B = [deg2rad(30); 0.2635];
+q_C = [deg2rad(60); 0.2];
+
+% q_A = [0; 0];
+% q_B = [deg2rad(120); 0.5];
+% q_C = [deg2rad(240); 3.21];
+% [R_0T_vec, p_0T_vec, q_A_vec, q_B_vec, q_C_vec, slopes] = rob.FK(q_A(1:2), q_B(1:2), q_C(1:2))
 
 %%
 [R_0T_vec, p_0T_vec, q_A_vec, q_B_vec, q_C_vec, slopes] = rob.FK(q_C(1:2), q_A(1:2), q_B(1:2))

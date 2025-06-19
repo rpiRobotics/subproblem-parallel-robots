@@ -15,11 +15,13 @@ i = 4
 i = 4;
 diagrams.setup; hold on
 rob.plot(Q_A(:,i), Q_B(:,i), Q_C(:,i));
-diagrams.arrow([0;0;0], p_0T);
+% diagrams.arrow([0;0;0], p_0T);
 
 view(0, 30);
 
 diagrams.redraw; hold off
+%%
+diagrams.save()
 
 %% Test FK
 i=4

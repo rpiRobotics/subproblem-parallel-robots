@@ -6,9 +6,12 @@ rob = HexapodSimple();
 i = 1;
 diagrams.setup; hold on;
 rob.plot(Q_A(:,i), Q_B(:,i), Q_C(:,i), Q_D(:,i), Q_E(:,i), Q_F(:,i));
-diagrams.arrow([0;0;0], [0;0;2]);
+% diagrams.arrow([0;0;0], [0;0;2]);
+diagrams.text([0;0;2], "$\mathcal O_T$", align="v", margin=10);
+view(-28,22)
 diagrams.redraw; hold off;
-
+%%
+diagrams.save()
 %%
 i = 1;
 [R_0T_vec, p_0T_vec] = rob.FK(Q_A(3,i), Q_B(3,i), Q_C(3,i), Q_D(3,i), Q_E(3,i), Q_F(3,i), true);
