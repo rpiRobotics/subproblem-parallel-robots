@@ -1,11 +1,9 @@
-# subproblems-comprehensive
-
-* Comprehensive subproblem solutions with diagnostic information
-* Planar robot exapmles
-
-## Parallel robot forward and inverse kinematics examples
-* Delta Robot
+# subproblem-parallel-robots
+Forward and inverse kinematics examples for
+* Planar five bar linkage
+* Spatial five bar linkage
 * Eclipse
-* Five Bar Linkage (Planar)
-* Spatial Five Bar Linkage
-* Hexapod (Stewart Platform)
+* Delta robot
+* Hexapod (Stewart platform)
+
+Also shown are comprehensive subproblem solutions with diagnostic information for singularity detection.
